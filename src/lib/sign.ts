@@ -65,7 +65,7 @@ export async function checkAndDecrypt(ctx: EncryptCtx, resp: { data: any; header
       return {
         errcode: -1,
         errmsg: "响应解密失败",
-        details: error.message
+        details: (error as Error).message
       };
     }
   }

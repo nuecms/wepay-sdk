@@ -21,6 +21,7 @@ export default defineConfig({
         'cross-fetch',
         '@nuecms/sdk-builder',
         'crypto', //
+        'buffer'
       ], // Mark dependencies as external
       output: {
         globals: {
